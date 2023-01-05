@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(138, 64, 138);
+    font-family: 'open sans', sans-serif;
+}
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+}
+.principal {
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    background-color: rgba(230, 230, 230, 0.89);
+    position: relative;
+    /*margin-left: 670px;*/
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.171);
+}
+h1 {
+    font-size: 40px;
+    color:rgb(138, 64, 138);
+    text-align: center;
+    padding-top: 50px;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode:backwards;
+}
+
+.dados {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  
+}
+.enter {
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+input{
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px 10px 40px;
+    outline: 0;
+    animation: move 1s;
+    animation-fill-mode:backwards;
+}
+#email {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 100px 10px 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(138, 64, 138);
+    outline: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 350ms;
+    animation-fill-mode:backwards;
+    overflow: hidden;
+}
+
+button:hover {
+    transition: background 0.5s;
+    background-color: rgb(97, 44, 97);
+}
+a {
+    color: rgba(0, 0, 0, 0.699);
+    text-align: center;
+    text-decoration: none;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 550ms;
+    animation-fill-mode: backwards;
+}
+a:hover {
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+}
+.forgot {
+    padding-top: 15px;
+}
+.a1 {
+    border-top: 0.4px solid black;
+    padding-top: 10px;
+}
+.create {
+    margin-top: 30px;
+}
+@keyframes fade {
+   from{
+    opacity: 0;
+    transform: scale(0.7);
+   } to {
+    opacity: 1;
+    transform: scale(1);
+   }
+}
+@keyframes move{
+    from {
+        opacity: 0;
+        transform: translateX(-35%)
+    } to {
+        opacity: 1;
+        transform: translateX(-0%)
+    }
+}
